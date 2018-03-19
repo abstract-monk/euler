@@ -7,4 +7,11 @@
 # get 3, 5, 6, 9. The sum of these multiples is 23. Find the sum of all the 
 # multiples of 3 or 5 below 1000.
 
+x = 1000
+numbers = []
+for n in range(1,x):
+    if((n % 3 == 0) or (n % 5 == 0)):
+        numbers.append(n)
+
+print(sum(numbers))
 
