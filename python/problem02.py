@@ -9,3 +9,13 @@
 # By considering the term in the Fibonacci sequence whose values do not exceed
 # four million, find the sum of the even-valued terms.
 
+def even_fibseq(n):
+    seq = []
+    a,b = 1,1
+    while b < n:
+        a,b = b, a+b
+        seq.append(a)
+    return filter(lambda x: x % 2 == 0, seq)
+
+print(even_fibseq(4*10**6))
+
