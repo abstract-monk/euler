@@ -5,8 +5,8 @@
 # The prime factors of 13195 are 5, 7, 13, 29.
 # What is the largest prime factor of the number 600851475143 ?
 
-# method to check if a number is prime or not
 def isprime(n):
+''' check if n is prime or not '''    
     # check special cases
     if n == 1:
         return False
@@ -22,4 +22,5 @@ def isprime(n):
             return False
         i+=2
     return True
+
 
