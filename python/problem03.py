@@ -26,11 +26,15 @@ def isprime(n):
 def get_prime_factors(num):
    ''' return list of of prime factors for given number '''
    factors = []
-   i = 2
-   while i <= num:
+   # check special case of 2
+   if num % 2 == 0:
+       factors.append(2)
+   # check odd numbers up to n/2
+   i = 3
+   while i*i <= num:
        if num % i == 0 and isprime(i):
            factors.append(i)
-       i+=1
+       i+=2
    return factors
 
 print(get_prime_factors(600851475143))
