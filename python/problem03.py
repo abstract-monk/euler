@@ -37,5 +37,5 @@ def get_prime_factors(num):
        i+=2
    return factors
 
-print(get_prime_factors(600851475143))
+print(max(get_prime_factors(600851475143)))
 
