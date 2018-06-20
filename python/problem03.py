@@ -23,7 +23,3 @@ def isprime(n):
         i+=2
     return True
 
-print(isprime(1))
-print(isprime(2))
-print(isprime(33))
-print(isprime(31))
