@@ -33,5 +33,5 @@ def get_prime_factors(num):
        i+=1
    return factors
 
-print(get_prime_factors(10))
+print(get_prime_factors(600851475143))
 
